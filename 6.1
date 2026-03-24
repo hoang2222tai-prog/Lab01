@@ -1,0 +1,20 @@
+import javax.swing.JOptionPane;
+
+public class chon {
+    public static void main(String[] args) {
+        // hien bang hoi co hoac khong
+        int c_n = JOptionPane.showConfirmDialog(null, "chon di");
+
+        // check xem bam nut nao
+        String kq;
+        if (c_n == JOptionPane.YES_OPTION) {
+            kq = "chon co";
+        } else {
+            kq = "chon khong";
+        }
+
+        // hien ket qua ra man hinh
+        JOptionPane.showMessageDialog(null, kq);
+        System.exit(0);
+    }
+}
